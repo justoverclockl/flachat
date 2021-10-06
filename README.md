@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Add a RealTime chat (with no history) to flarum
 
+![flachat](https://user-images.githubusercontent.com/79002016/136176773-9723acad-2f13-4d7f-b437-09752f2008b5.png)
+
+
 ## Installation
 
 Install with composer:
@@ -16,12 +19,10 @@ composer require justoverclock/flachat:"*"
 
 ```sh
 composer update justoverclock/flachat:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/flachat)
-- [GitHub](https://github.com/justoverclock/flachat)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/flachat)
