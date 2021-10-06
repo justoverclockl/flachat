@@ -1,0 +1,40 @@
+{
+    "name": "justoverclock/flachat",
+    "description": "Add a RealTime chat (with no history) to flarum",
+    "keywords": [
+        "chat",
+        "realtime chat",
+        "flarum chat"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Marco Colia",
+            "email": "info@flarum.it",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Justoverclock\\FlaChat\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FlaChat",
+            "category": "",
+            "icon": {
+                "name": "fab fa-rocketchat",
+                "backgroundColor": "pink",
+                "color": "white"
+            }
+        }
+    }
+}
