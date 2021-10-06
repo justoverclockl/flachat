@@ -1,6 +1,6 @@
 div#box {
   height: 200px;
-  overflow: hidden;
+  overflow: auto;
   padding: 10px;
   border-radius: 11px;
   background: #e8ecf3;
@@ -37,4 +37,26 @@ input.FormChat {
 }
 i.fas.fa-comment-alt.chatIcon {
   margin-right: 5px;
+}
+
+/* scrollbar  */
+#box::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #e8ecf3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#box::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+#box::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: @primary-color;
 }
