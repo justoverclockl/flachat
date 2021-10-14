@@ -18,7 +18,7 @@ app.initializers.add('justoverclock/flachat', () => {
       'chatItem',
       [
         m('h1', { id: 'titleNl' }, ['.Fla', m('span', 'Chat')]),
-        m("div",
+        m("div", { className: "flachatDiv"},
           m("input", {className: "FormChat" , id: "input", placeholder: app.translator.trans('justoverclock-flachat.forum.writeinchat')})
         ),
         m("div", {className: "chatContainer" ,id: "box"})
@@ -32,14 +32,15 @@ app.initializers.add('justoverclock/flachat', () => {
     (function() {
       var pubnub = new PubNub({
         publishKey: pubkey,
-        subscribeKey: subkey
+        subscribeKey: subkey,
+        uuid: 'ciaooo'
       });
       function $(id) {
         return document.getElementById(id);
       }
       var box = $('box'),
         input = $('input'),
-        channel = '10chat-demo';
+        channel = 'flaroom';
       pubnub.addListener({
         message: function(obj) {
           box.innerHTML = '<i class="fas fa-comment-alt chatIcon"></i>' + ('' + obj.message).replace(/[<>]/g, '') + '<br>' + box.innerHTML
